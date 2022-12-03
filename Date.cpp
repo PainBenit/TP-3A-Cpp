@@ -1,3 +1,4 @@
+#if 0
 #include<iostream>
 #include "Date.h"
 
@@ -15,3 +16,4 @@ Date::getArrayDate()
 	std::array<int, 3> Date = {_day, _month , _year};
 	return Date
 }
+#endif
