@@ -32,3 +32,5 @@
 *.app
 /.vs/TP1-3A-Cpp/v16
 /TP1-3A-Cpp.vcxproj.user
+/x64/Debug
+/x64/Release
