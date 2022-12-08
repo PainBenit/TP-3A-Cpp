@@ -13,6 +13,7 @@ public:
 	Date(int day, int month, int year);
 	Date();
 
+	void setDate(int day, int month, int year);
 	std::array <int,3> getArrayDate();
 	std::string getStringDate();
 };
