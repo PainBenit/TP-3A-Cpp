@@ -55,5 +55,8 @@
     <ClCompile Include="Lecteur.cpp">
       <Filter>2-sources</Filter>
     </ClCompile>
+    <ClCompile Include="Emprunt.cpp">
+      <Filter>2-sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
