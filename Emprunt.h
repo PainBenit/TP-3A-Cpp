@@ -8,6 +8,13 @@ class Emprunt
 public:
 
 	Emprunt(Date dateEmprunt, Lecteur Emprunteur, Livre Emprunter);
+	std::array <int,3> getDateEmprunt();
+	std::string getEmprunteur();
+	double getEmprunter();
+	void setDateEmprunt(Date dateEmprunt);
+	void setEmprunteur(Lecteur Empreunteur);
+	void setEmprunter(Livre Emprunter);
+
 
 private:
 

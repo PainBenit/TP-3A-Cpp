@@ -14,6 +14,7 @@ int main ()
 	Date Arak(7, 6, 1960);
 	Auteur test(ID, prenom, nom, Arak);
 	
+	test.setID("s42");
 	test.setFullname("Nguyen", "Araki");
 	std::cout << Arak.getArrayDate()[0] << "/" << Arak.getArrayDate()[1] << "/" << Arak.getArrayDate()[2] << std::endl;
 	std::cout << Arak.getStringDate() << std::endl;

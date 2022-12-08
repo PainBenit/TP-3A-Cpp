@@ -93,6 +93,7 @@
   <ItemGroup>
     <ClCompile Include="Auteur.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="Emprunt.cpp" />
     <ClCompile Include="Lecteur.cpp" />
     <ClCompile Include="Livre.cpp" />
     <ClCompile Include="main.cpp" />
