@@ -46,5 +46,14 @@
     <ClCompile Include="main.cpp">
       <Filter>2-sources</Filter>
     </ClCompile>
+    <ClCompile Include="Auteur.cpp">
+      <Filter>2-sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Livre.cpp">
+      <Filter>2-sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Lecteur.cpp">
+      <Filter>2-sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

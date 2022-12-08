@@ -11,17 +11,17 @@ public:
 	std::string getTitre();
 	std::string getLangue();
 	std::string getGenre();
-	getDatePu();
+	std::array <int, 3> getDatePu();
 	double getISBN();
 	std::vector <std::string> getListe_ID();
 
 private:
 
-	Auteur auteur;
+	Auteur _auteur;
 	std::string _titre;
 	std::string _langue;
 	std::string _genre;
-	Date _DatePublication;
+	Date _datePublication;
 	double _ISBN;
 	std::vector <std::string> _liste_ID;
 };
