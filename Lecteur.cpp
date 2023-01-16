@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Lecteur.h"
 
@@ -35,4 +36,14 @@ void Lecteur::setFullname(std::string nom, std::string prenom)
 void Lecteur::setListe_Emprunt(std::vector<double> Liste_Emprunt)
 {
 	_Liste_Emprunt = Liste_Emprunt;
+}
+void Lecteur::addEmprunt(double ISBN_book)
+{
+	_Liste_Emprunt.push_back(ISBN_book);
+}
+
+std::ostream& operator<<(std::ostream& os, Lecteur reader)
+{
+	os << reader.getFullname()<<" "<< reader.getID() <<" ";
+	return os;
 }

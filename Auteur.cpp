@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Auteur.h"
 #include "Date.h"
@@ -41,4 +42,10 @@ void Auteur::setFullname(std::string nom, std::string prenom)
 void Auteur::setID(std::string ID)
 {
 	_ID = ID;
+}
+
+std::ostream& operator<<(std::ostream& os, Auteur author)
+{
+	os << author.getID() << " " << author.getFullname() << " ";
+	return os;
 }

@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 
@@ -12,10 +13,13 @@ public:
 	void setID(std::string ID);
 	void setFullname(std::string nom, std::string prenom);
 	void setListe_Emprunt(std::vector<double> Liste_Emprunt);
+	void addEmprunt(double ISBN_book);
+	friend std::ostream& operator<<(std::ostream& os, Lecteur reader);
+
 
 private:
 
-	std::string _ID;		
+	std::string _ID;
 	std::string _nom;
 	std::string _prenom;
 	std::vector <double> _Liste_Emprunt;

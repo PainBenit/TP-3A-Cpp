@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Date.h"
 
@@ -12,6 +13,7 @@ public:
 	void setDate(int day, int month, int year);
 	void setFullname(std::string nom, std::string prenom);
 	void setID(std::string ID);
+	friend std::ostream& operator<<(std::ostream& os, Auteur author);
 
 private:
 

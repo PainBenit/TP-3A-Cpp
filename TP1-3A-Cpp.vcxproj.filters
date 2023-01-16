@@ -30,6 +30,9 @@
     <ClInclude Include="Livre.h">
       <Filter>1-headers</Filter>
     </ClInclude>
+    <ClInclude Include="Bibliotheque.h">
+      <Filter>1-headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="CppProperties.json">
@@ -56,6 +59,9 @@
       <Filter>2-sources</Filter>
     </ClCompile>
     <ClCompile Include="Emprunt.cpp">
+      <Filter>2-sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Bibliotheque.cpp">
       <Filter>2-sources</Filter>
     </ClCompile>
   </ItemGroup>

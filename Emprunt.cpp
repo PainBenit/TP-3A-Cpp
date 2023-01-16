@@ -1,3 +1,4 @@
+#pragma once
 #include<iostream>
 #include "Lecteur.h"
 #include "Livre.h"
@@ -13,9 +14,9 @@ std::array <int, 3> Emprunt::getDateEmprunt()
 	return _dateEmprunt.Date::getArrayDate();
 }
 
-std::string Emprunt::getEmprunteur()
+Lecteur Emprunt::getEmprunteur()
 {
-	return _Emprunteur.Lecteur::getID();
+	return _Emprunteur;
 }
 
 double Emprunt::getEmprunter()

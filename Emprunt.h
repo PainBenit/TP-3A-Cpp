@@ -1,3 +1,4 @@
+#pragma once
 #include<iostream>
 #include "Lecteur.h"
 #include "Livre.h"
@@ -9,7 +10,7 @@ public:
 
 	Emprunt(Date dateEmprunt, Lecteur Emprunteur, Livre Emprunter);
 	std::array <int,3> getDateEmprunt();
-	std::string getEmprunteur();
+	Lecteur getEmprunteur();
 	double getEmprunter();
 	void setDateEmprunt(Date dateEmprunt);
 	void setEmprunteur(Lecteur Empreunteur);
