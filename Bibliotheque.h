@@ -16,12 +16,11 @@ public:
 	int addLivre(Livre book);
 	int addAuteur(Auteur writer);
 	int addLecteur(Lecteur reader);
-	int Emprunter(Livre book, Lecteur reader,Date date);
-	int Retour(Livre book, Lecteur reader, Date date);
+	int Emprunter(Livre* book, Lecteur* reader,Date* date);
+	int Retour(Livre* book, Lecteur* reader, Date* date);
 	std::vector<Livre> LivreparAuteur(Auteur author);
 	float PourcentageLivreEmprunte();
 	std::vector<Livre> LivreEmprunteParLecteur(Lecteur reader);
-	std::vector<Lecteur> Classement();
 
 private:
 	std::vector<Livre> _Liste_Livre;

@@ -4,7 +4,7 @@
 #include "Date.h"
 
 Livre::Livre(Auteur auteur, std::string titre, std::string langue, std::string genre, Date DatePublication, double ISBN, std::vector<std::string> liste_ID) :
-	_auteur(auteur), _titre(titre), _langue(langue), _genre(genre), _datePublication(DatePublication), _ISBN(ISBN), _liste_ID(liste_ID), disponibilite(0) {}
+	_auteur(auteur), _titre(titre), _langue(langue), _genre(genre), _datePublication(DatePublication), _ISBN(ISBN), _liste_ID(liste_ID), disponibilite(1) {}
 
 Auteur Livre::getAuteur()
 {
@@ -44,9 +44,10 @@ bool Livre::isdispo()
 {
 	return disponibilite;
 }
+
 void Livre::setdispo()
 {
-	if (disponibilite)
+	if (disponibilite == true)
 	{
 		disponibilite = false;
 	}
@@ -63,6 +64,6 @@ void Livre::addID(std::string ID_lecteur)
 
 std::ostream& operator<<(std::ostream& os, Livre book)
 {
-	os << book.getTitre() << " " << book.getAuteur() << " " << " " << book.getISBN() << " " << book.getGenre() << " " << book.getLangue();
+	os << book.getTitre() << " " << book.getAuteur() << " " <<book.getDatePu()[0] << "/" << book.getDatePu()[1] << "/" << book.getDatePu()[2] << " " << book.getISBN() << " " << book.getGenre() << " " << book.getLangue();
 	return os;
 }

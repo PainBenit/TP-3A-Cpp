@@ -115,8 +115,23 @@ int main ()
 	Bibliotheque Librarie(Liste_Livre,Liste_Auteur,Liste_Lecteur,Liste_Emprunt);
 
 	Date Emprunt1(12, 1, 2023);
-	int x = Librarie.Emprunter(HPotter1,Lecteur1,Emprunt1);
-	
+	Librarie.Emprunter(&HPotter1,&Lecteur1,&Emprunt1);
+	Librarie.Emprunter(&HPotter1,&Lecteur1,&Emprunt1);
+	Librarie.Retour(&HPotter1,&Lecteur1,&Emprunt1);
+	std::cout << HPotter1 << J_Rowling << Lecteur1<<"\n";
+	Librarie.Emprunter(&HPotter1, &Lecteur1, &Emprunt1);
+	std::vector<Livre> listeJK = Librarie.LivreparAuteur(J_Rowling);
+	for (auto it = listeJK.begin(); it != listeJK.end(); it++)
+	{
+		std::cout << *it << "\n";
+	}
+	float porcentEmprunt = Librarie.PourcentageLivreEmprunte();
+	std::cout << "le pourcentage de livre emprunte est : " << porcentEmprunt << "% \n";
+	std::vector<Livre> listelec1 = Librarie.LivreEmprunteParLecteur(Lecteur1);
+	for (auto it = listelec1.begin(); it != listelec1.end(); it++)
+	{
+		std::cout << *it << "\n";
+	}
 	return 0;
 }
 
